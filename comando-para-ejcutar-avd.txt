@@ -1,0 +1,2 @@
+cd C:\Users\sam170703dev\AppData\Local\Android\Sdk\emulator
+.\emulator.exe -avd test -gpu swiftshader_indirect
