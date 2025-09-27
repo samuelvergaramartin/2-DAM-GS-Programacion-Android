@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Ejercicio 11</string>
+    <string name="user_input_placeholder">Usuario</string>
+    <string name="password_input_placeholder">Clave</string>
+    <string name="forgotten_password_text">¿Contraseña olvidada?</string>
+    <string name="button_text">LOGIN</string>
+</resources>

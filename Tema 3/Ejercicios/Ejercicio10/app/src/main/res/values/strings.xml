@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Nombre y apellidos: Ejercicio 10</string>
+    <string name="title">Mi primera aplicación en Android</string>
+    <string name="text">Introduce los siguientes datos:</string>
+    <string name="label1">Nombre</string>
+    <string name="label2">Clave</string>
+    <string name="name_imput_placeholder">Introduce el nombre</string>
+    <string name="password_input_placeholder">Introduce la clave</string>
+    <string name="text_button">RESETEAR</string>
+</resources>
