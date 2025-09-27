@@ -4,4 +4,9 @@
     <string name="password_input_placeholder">Clave</string>
     <string name="forgotten_password_text">¿Contraseña olvidada?</string>
     <string name="button_text">LOGIN</string>
+    <string name="logged_text">Bienvenido de nuevo root, has iniciado sesión correctamente</string>
+    <string name="logout_button_text">Cerrar sesión</string>
+    <string name="recovery_password_text">Hey amigo! Que el usuario es "root" y la contraseña es "root".</string>
+    <string name="thanks_button_text">Gracias!</string>
+
 </resources>
