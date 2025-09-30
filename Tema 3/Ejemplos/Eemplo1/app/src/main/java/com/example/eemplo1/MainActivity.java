@@ -2,9 +2,13 @@ package com.example.eemplo1;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.ArrayAdapter;
+import android.widget.AutoCompleteTextView;
 import android.widget.Button;
 import android.widget.CompoundButton;
 import android.widget.ImageButton;
+import android.widget.ImageView;
+import android.widget.MultiAutoCompleteTextView;
 import android.widget.TextView;
 import android.widget.ToggleButton;
 
@@ -68,5 +72,22 @@ public class MainActivity extends AppCompatActivity {
                 btnImagen.setImageResource(R.drawable.feliz);
             }
         });
+
+        ImageView imagen2 = findViewById(R.id.img1);
+
+        imagen2.setImageResource(R.drawable.android);
+
+        // Creamos los datos para el autocompletextextview , el adaptador y  se lo  asignamos
+
+        String opciones[] = {"Opcion 1",  "Opcion 2", "Opcion 3", "Opcion 4"};
+        ArrayAdapter<String> adaptador = new ArrayAdapter<>(this, android.R.layout.simple_dropdown_item_1line, opciones);
+        final AutoCompleteTextView textoLeido = findViewById(R.id.actext);
+
+        textoLeido.setAdapter(adaptador);
+
+        final MultiAutoCompleteTextView mac = findViewById(R.id.mac);
+
+        mac.setTokenizer(new MultiAutoCompleteTextView.CommaTokenizer());
+        mac.setAdapter(adaptador);
     }
 }
