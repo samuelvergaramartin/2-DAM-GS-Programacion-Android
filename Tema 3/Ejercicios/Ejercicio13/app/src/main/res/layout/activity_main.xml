@@ -7,7 +7,15 @@
     android:orientation="vertical"
     android:layout_margin="15dp"
     android:padding="15dp">
-    
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text1"
+        android:textAlignment="center"
+        android:textSize="25sp"
+        android:layout_marginBottom="10dp"/>
+
     <Spinner
         android:id="@+id/spinner"
         android:layout_width="wrap_content"
@@ -22,17 +30,38 @@
         android:numStars="5"/>
 
     <ProgressBar
+        android:id="@+id/progressBar1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        style="?android:attr/progressBarStyle"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
         style="?android:attr/progressBarStyleHorizontal"
-        />
+        android:max="100"/>
+
 
     <SeekBar
+        android:id="@+id/seekBar"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:min="2"
         android:max="30"
         android:progress="10"/>
+
+    <Switch
+        android:id="@+id/switch1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <AutoCompleteTextView
+        android:id="@+id/autocomplete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="Selecciona una opción"
+        android:completionThreshold="3"/>
 
 
 </LinearLayout>
