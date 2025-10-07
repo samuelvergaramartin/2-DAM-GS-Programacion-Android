@@ -32,8 +32,7 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
                 final String valorTexto = texto.getText().toString();
 
-                texto.setText("");
-                texto.setText(valorTexto + "\n" + valorTexto);
+                texto.append("\n" + valorTexto);
             }
         });
     }
