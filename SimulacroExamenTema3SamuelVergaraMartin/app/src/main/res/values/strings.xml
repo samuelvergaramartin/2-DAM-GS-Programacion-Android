@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">SimulacroExamenTema3SamuelVergaraMartin</string>
+    <string name="activity_main_user_input">Usuario</string>
+    <string name="activity_main_password_input">Contraseña</string>
+    <string name="activity_main_button_text">Acceder</string>
+    <string name="activity_2_text1">TE DAMOS LA BIENVENIDA</string>
+    <string name="activity_2_text2">¿CÓMO PODEMOS AYUDARTE?</string>
+    <string name="activity_2_button1_text">PERDER PESO</string>
+    <string name="activity_2_button2_text">VOLVERME MÁS FUERTE</string>
+    <string name="activity_2_button3_text">MANTENERME EN FORMA</string>
+    <string name="activity_2_button4_text">SIGUIENTE</string>
+    <string name="activity_3_text1">¿EN QUÉ PARTE TE QUIERES CENTRAR?</string>
+    <string name="activity_3_text2">ESTABLECE TU OBJETIVO SEMANAL</string>
+    <string name="activity_3_checkbox_text1">Barriga</string>
+    <string name="activity_3_checkbox_text2">Brazo</string>
+    <string name="activity_3_checkbox_text3">Muslos</string>
+    <string name="activity_3_checkbox_text4">Glúteos</string>
+
+
+</resources>
