@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Ejemplo1</string>
+    <string name="texto">Orden de ejeccución de los métodos\n\n
+        1. Al crear la  aplicació se lanzan los métodos  onCreate, onStart y onResume\n\n
+        2. Si haces click en el boton "Volver atras" se lanzan los métodos onPause, onStop y onDestroy\n\n
+        3. Cuando la aplicación finaliza  se  lanzan los  metodos onPause, onStop y onDestroy\n\n
+        4. Al hacer click en Home se lanzan los metodos onPause y onStop\n\n
+        5. Si volvemos a ejecutar una aplicacion destruida o en espera, se lanzan los metodos onRestart, onStart y onResume
+    </string>
+</resources>
