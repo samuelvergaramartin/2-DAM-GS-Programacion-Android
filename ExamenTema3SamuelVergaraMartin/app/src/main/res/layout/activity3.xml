@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity3"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textSize="40sp"
+        android:layout_marginBottom="20dp"
+        android:text="@string/title_activity3"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SeekBar
+            android:id="@+id/seekbar_r"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:min="0"
+            android:max="255"
+            android:progress="0"
+            android:layout_weight="1"/>
+
+        <SeekBar
+            android:id="@+id/seekbar_g"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:min="0"
+            android:max="255"
+            android:progress="0"
+            android:layout_weight="1"/>
+
+        <SeekBar
+            android:id="@+id/seekbar_b"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:min="0"
+            android:max="255"
+            android:progress="0"
+            android:layout_weight="1"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:text="@string/text1_activity3"/>
+
+    <Button
+        android:id="@+id/button1_activity3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button1_activity3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:text="@string/text2_activity3"/>
+
+    <GridLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:rowCount="2"
+        android:columnCount="3">
+
+        <CheckBox
+            android:id="@+id/checkbox1_activity3"
+            android:text="@string/language1"
+            android:layout_row="0"
+            android:layout_column="0"/>
+
+        <CheckBox
+            android:id="@+id/checkbox2_activity3"
+            android:text="@string/language2"
+            android:layout_row="0"
+            android:layout_column="1"/>
+
+        <CheckBox
+            android:id="@+id/checkbox3_activity3"
+            android:text="@string/language3"
+            android:layout_row="0"
+            android:layout_column="2"/>
+
+        <CheckBox
+            android:id="@+id/checkbox4_activity3"
+            android:text="@string/language4"
+            android:layout_row="1"
+            android:layout_column="0"/>
+
+    </GridLayout>
+
+    <Button
+        android:id="@+id/button2_activity3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text_button2_activity3"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginTop="20dp"
+        android:text="@string/text3_activity3"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/language1"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/language2"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/language3"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/language4"/>
+
+    </RadioGroup>
+
+</LinearLayout>
