@@ -40,6 +40,15 @@
         android:layout_marginTop="3dp"
         android:layout_marginRight="3dp"/>
 
+    <EditText
+        android:id="@+id/clave"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:inputType="textPassword"
+        android:layout_marginRight="3dp"
+        android:layout_marginLeft="3dp"
+        android:saveEnabled="false"/>
 
 
 </LinearLayout>
