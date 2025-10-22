@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">ExamenTema3SamuelVergaraMartin</string>
+    <string name="text_button_activity_main">Acceder</string>
+    <string name="hint_user_activity_main">Usuario</string>
+    <string name="hint_password_activity_main">Contraseña</string>
+    <string name="text1_activity2">Configurar App</string>
+    <string name="text2_activity2">Elegir idiomas</string>
+    <string name="text3_activity2">Continuar con las clases</string>
+    <string name="title_activity3">Configuración</string>
+    <string name="text1_activity3">Color de fondo</string>
+    <string name="text2_activity3">Idiomas elegidos</string>
+    <string name="text3_activity3">Idioma actual</string>
+    <string name="text_button1_activity3">Cambiar</string>
+    <string name="text_button2_activity3">Consultar idiomas</string>
+    <string name="language1">Inglés</string>
+    <string name="language2">Francés</string>
+    <string name="language3">Alemán</string>
+    <string name="language4">Japonés</string>
+
+</resources>

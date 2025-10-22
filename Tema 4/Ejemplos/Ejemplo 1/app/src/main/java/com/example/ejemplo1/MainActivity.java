@@ -1,9 +1,11 @@
 package com.example.ejemplo1;
 
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
+import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
@@ -13,8 +15,8 @@ public class MainActivity extends AppCompatActivity {
 
     //Definimos el evento callback onCreate de la actividad
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
+    protected void onCreate(Bundle estadoAlmacenado) {
+        super.onCreate(estadoAlmacenado);
         EdgeToEdge.enable(this);
         setContentView(R.layout.secondary);
         ViewCompat.setOnApplyWindowInsetsListener(findViewById(R.id.main), (v, insets) -> {
@@ -23,8 +25,24 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        //Mostramos el toast con un mensaje
-        Toast.makeText(this, "Se ejecuta el método onCreate", Toast.LENGTH_SHORT).show();
+        if(estadoAlmacenado != null) {
+            //Recuperamos la  variable  que hemos guardado en el estado.
+            Toast.makeText(this, "Evento onCreate(): recuperamos  la variable almacenada " + estadoAlmacenado.getString("VARIABLE_ALMACENADA"), Toast.LENGTH_SHORT).show();
+        }
+
+
+    }
+
+    @Override
+    protected void onSaveInstanceState(@NonNull Bundle estado) {
+        super.onSaveInstanceState(estado);
+
+        // Aqui vamos a guardar las cosas que necesitemos de la actividad
+        // En el estado vamos a almacenar una variable de tipo  texto
+
+        estado.putString("VARIABLE_ALMACENADA",  "Texto guardado");
+        Toast.makeText(this, "El estado de la actividad se ha guardado", Toast.LENGTH_SHORT).show();
+        Log.i("estado", "Texto guardado");
     }
 
     //Definimos el metodo onStart

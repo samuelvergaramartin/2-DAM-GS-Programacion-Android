@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="user_values">
+        <item>Rocío</item>
+        <item>Rosa</item>
+        <item>Juan</item>
+        <item>Julio</item>
+        <item>Javier</item>
+    </string-array>
+</resources>
