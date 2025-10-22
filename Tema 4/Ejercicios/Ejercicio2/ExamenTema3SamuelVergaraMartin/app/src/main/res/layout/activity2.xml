@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/activity2"
+    android:orientation="vertical"
+    android:background="@color/blue">
+
+    <ImageView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/hacer"/>
+
+    <TextView
+        android:id="@+id/text1_activity2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:text="@string/text1_activity2"
+        android:layout_margin="5dp"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_weight="1"
+        android:gravity="center"/>
+
+    <TextView
+        android:id="@+id/text2_activity2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:text="@string/text2_activity2"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/text3_activity2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="@string/text3_activity2"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/text4_activity2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="Siguiente"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_weight="1"/>
+
+    <TextView
+        android:id="@+id/text5_activity2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/light_blue"
+        android:layout_margin="5dp"
+        android:gravity="center"
+        android:text="Atrás"
+        android:textSize="30sp"
+        android:textColor="@color/white"
+        android:layout_weight="1"/>
+
+
+
+</LinearLayout>
