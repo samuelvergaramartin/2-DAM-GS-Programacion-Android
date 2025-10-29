@@ -1,5 +1,6 @@
 package com.example.examentema3samuelvergaramartin;
 
+import android.content.Intent;
 import android.graphics.Color;
 import android.os.Bundle;
 import android.view.View;
@@ -32,6 +33,7 @@ public class Activity3 extends AppCompatActivity {
         final SeekBar seekBarBlue = findViewById(R.id.seekbar_b);
         final Button button1 = findViewById(R.id.button1_activity3);
         final Button button2 = findViewById(R.id.button2_activity3);
+        final Button buttonActivity2 = findViewById(R.id.botonVolverActividad2);
         final CheckBox checkBox1 = findViewById(R.id.checkbox1_activity3);
         final CheckBox checkBox2 = findViewById(R.id.checkbox2_activity3);
         final CheckBox checkBox3 = findViewById(R.id.checkbox3_activity3);
@@ -54,6 +56,14 @@ public class Activity3 extends AppCompatActivity {
                 if(checkBox4.isChecked()) toastMessage+= checkBox4.getText() + " ";
 
                 Toast.makeText(Activity3.this, toastMessage, Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        buttonActivity2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent activity2 = new Intent(Activity3.this, Activity2.class);
+                startActivity(activity2);
             }
         });
     }

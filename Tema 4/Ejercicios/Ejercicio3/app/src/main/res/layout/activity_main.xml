@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Intenciones"
+        android:layout_gravity="center"
+        android:textSize="20sp"/>
+
+    <Button
+        android:id="@+id/btnMandarMensaje"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mandar mensaje"
+        android:layout_gravity="center"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnAbrirPaginaWeb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir página web"
+        android:layout_gravity="center"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnLlamarPorTelefono"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Llamar por teléfono"
+        android:layout_gravity="center"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnAbrirMapa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Abrir mapa"
+        android:layout_gravity="center"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnTomarFoto"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tomar foto"
+        android:layout_gravity="center"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnMandarCorreo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mandar correo"
+        android:layout_gravity="center"
+        android:onClick="onClick"/>
+
+    <Button
+        android:id="@+id/btnStreetView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Street View"
+        android:layout_gravity="center"
+        android:onClick="onClick"/>
+
+
+</LinearLayout>
