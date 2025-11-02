@@ -7,6 +7,29 @@
     android:background="@color/orange"
     android:orientation="vertical">
 
-    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/main_screen_title"
+        android:textColor="@color/black"
+        android:layout_gravity="center"
+        android:textSize="50sp"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="30dp"/>
+
+    <Spinner
+        android:id="@+id/mainSpinner"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"/>
+
+    <ImageButton
+        android:id="@+id/spiderButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/spider2"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@color/transparent"/>
 
 </LinearLayout>

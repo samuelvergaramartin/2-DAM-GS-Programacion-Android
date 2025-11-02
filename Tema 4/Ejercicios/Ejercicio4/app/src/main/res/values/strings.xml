@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Ejercicio4</string>
     <string name="main_screen_title">¿Truco o Trato?</string>
+    <string name="text1_trato_activity">Fantasmas</string>
+    <string name="text2_trato_activity">Calabazas</string>
+    <string name="text_truco_activity">Preparate...</string>
 </resources>
