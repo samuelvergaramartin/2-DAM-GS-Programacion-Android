@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="series">
+        <item>Stranger Things</item>
+        <item>Cobra Kai</item>
+        <item>A Korean Odyssey</item>
+        <item>Navidad en casa</item>
+        <item>Alquimia de almas</item>
+        <item>Desaparecido</item>
+        <item>Los Brigerton</item>
+        <item>Winx</item>
+        <item>Chernobyl</item>
+        <item>Lucifer</item>
+        <item>Supernatural</item>
+    </string-array>
+</resources>
