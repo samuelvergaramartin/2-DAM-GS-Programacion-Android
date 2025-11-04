@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Ejercicio4">
         <activity
+            android:name=".TrucoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TratoActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
