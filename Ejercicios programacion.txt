@@ -1,3 +1,2 @@
-- Del pdf de ejercicios del tema 3 del ejercicio 1 al 4 y del 6 al 8 y 10 y 11.
-
-La barrita de arriba del todo que pone el nombre de la aplicación no se pone, eso es algo que venia por defecto antes.
+Hacer todos los ejercicios de la primera relación (Listados)
+En el ejercicio 7 se hace con un ArrayAdapter en vez de con el BaseAdapter
