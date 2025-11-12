@@ -14,5 +14,5 @@ public class Adaptador extends ArrayAdapter<Datos> {
         this.datos = datos;
     }
 
-    
+
 }
