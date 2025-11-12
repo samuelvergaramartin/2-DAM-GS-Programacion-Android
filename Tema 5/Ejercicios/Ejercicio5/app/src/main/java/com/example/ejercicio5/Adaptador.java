@@ -19,9 +19,6 @@ public class Adaptador extends ArrayAdapter<Datos> {
         this.datos = datos;
     }
 
-<<<<<<< HEAD
-
-=======
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
@@ -36,5 +33,5 @@ public class Adaptador extends ArrayAdapter<Datos> {
 
         return elemento;
     }
->>>>>>> e0488c57dd51728040f52a8877b274e2e51686ff
+
 }
