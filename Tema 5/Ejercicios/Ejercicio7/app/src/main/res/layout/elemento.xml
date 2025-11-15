@@ -6,8 +6,16 @@
     android:orientation="vertical">
 
     <ImageView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/buho"/>
+
+    <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src=""
+        android:text="Cachorros"
+        android:textColor="@color/red"
+        android:textSize="30sp"
+        android:layout_marginStart="20dp"/>
     
 </LinearLayout>
