@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Ejercicio8</string>
+    <string name="texto_cabecera">Selecciona los dispositivos que usas para navegar por Internet y pulsa Aceptar</string>
+    <string name="texto_boton">Aceptar</string>
+</resources>

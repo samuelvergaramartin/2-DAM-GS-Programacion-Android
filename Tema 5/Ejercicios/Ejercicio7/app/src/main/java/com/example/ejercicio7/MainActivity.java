@@ -1,9 +1,13 @@
 package com.example.ejercicio7;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.GridLayout;
+import android.widget.GridView;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,10 +41,17 @@ public class MainActivity extends AppCompatActivity {
         datos.add(new Datos(R.drawable.tortuga, "Tortuga"));
         datos.add(new Datos(R.drawable.tucan, "Tucán"));
 
-        GridLayout contenedor = findViewById(R.id.container);
-        for(Datos dato : datos) {
-            ListView listado = new ListView(this);
+        GridView contenedor = findViewById(R.id.container);
 
-        }
+        Adaptador adaptador = new Adaptador(this, datos);
+        contenedor.setAdapter(adaptador);
+
+        contenedor.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+                String texto = ((Datos) parent.getItemAtPosition(position)).getTexto();
+                Toast.makeText(MainActivity.this, texto, Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }
