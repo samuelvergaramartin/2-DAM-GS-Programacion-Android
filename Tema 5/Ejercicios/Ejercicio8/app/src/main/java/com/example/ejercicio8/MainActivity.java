@@ -3,7 +3,10 @@ package com.example.ejercicio8;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
+import android.widget.Button;
+import android.widget.CheckBox;
 import android.widget.ListView;
+import android.widget.Toast;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -37,11 +40,23 @@ public class MainActivity extends AppCompatActivity {
         final Adaptador adaptador = new Adaptador(this, datos);
         final ListView listado = findViewById(R.id.listado);
         final View cabecera = getLayoutInflater().inflate(R.layout.cabecera, null);
+        final Button boton = cabecera.findViewById(R.id.boton);
         final ArrayList<String> dispositivosSeleccionados = new ArrayList<>();
-
-
 
         listado.addHeaderView(cabecera);
         listado.setAdapter(adaptador);
+
+        boton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                int contador = 0;
+                for(Datos dato : datos) {
+                    if(dato.isChecked()) contador++;
+                }
+
+                if(contador == 0) Toast.makeText(MainActivity.this, "No hay elementos  seleccionados", Toast.LENGTH_SHORT).show();
+                else Toast.makeText(MainActivity.this, "Hay " + contador + " elementos seleccionados", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 }

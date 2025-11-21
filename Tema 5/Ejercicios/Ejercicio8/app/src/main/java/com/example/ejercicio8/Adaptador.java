@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.CheckBox;
+import android.widget.CompoundButton;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -33,6 +34,15 @@ public class Adaptador extends ArrayAdapter<Datos> {
 
         final TextView texto = elemento.findViewById(R.id.texto);
         texto.setText(datos.get(position).getTexto());
+
+        final CheckBox checkBox = elemento.findViewById(R.id.micheck);
+
+        checkBox.setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
+            @Override
+            public void onCheckedChanged(@NonNull CompoundButton buttonView, boolean isChecked) {
+                datos.get(position).setChecked(isChecked);
+            }
+        });
 
         return elemento;
     }
