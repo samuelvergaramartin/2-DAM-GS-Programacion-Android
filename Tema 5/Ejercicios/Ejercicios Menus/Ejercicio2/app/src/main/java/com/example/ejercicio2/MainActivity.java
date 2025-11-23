@@ -1,12 +1,9 @@
-package com.example.ejercicio1;
+package com.example.ejercicio2;
 
 import android.os.Bundle;
 import android.view.Menu;
-import android.view.MenuItem;
-import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.graphics.Insets;
@@ -32,16 +29,7 @@ public class MainActivity extends AppCompatActivity {
             return insets;
         });
 
-        final Toolbar toolbar = findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
-    }
-
-    @Override
-    public boolean onOptionsItemSelected(@NonNull MenuItem item) {
-        final TextView texto = findViewById(R.id.texto);
-        String opcion = (String) item.getTitle();
-
-        texto.setText("Pulsado " + opcion);
-        return super.onOptionsItemSelected(item);
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        
     }
 }
