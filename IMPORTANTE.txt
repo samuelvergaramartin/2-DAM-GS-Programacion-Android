@@ -1,3 +1,5 @@
 - Todo lo que llevemos del proyecto (Modulo Proyecto): 10/12/2025
 - Proyecto del adaptador personalizado: 10/12/2025
-- Exposición del proyecto (Modulo Proyecto): 15/12/2025  (Con PowerPoint)																																																																																																																																																																																																																																																																																																																																																																																																																																																																				
+- Exposición del proyecto (Modulo Proyecto): 15/12/2025  (Con PowerPoint)																							
+
+Corrección: Lo del proyecto del adaptador personalizado es en realidad que metamos en el proyecto del modulo del proyecto un adaptador personalizado o un RecyclerView																																																																																																																																																																																																																																																																																																																																																																																																																																													
