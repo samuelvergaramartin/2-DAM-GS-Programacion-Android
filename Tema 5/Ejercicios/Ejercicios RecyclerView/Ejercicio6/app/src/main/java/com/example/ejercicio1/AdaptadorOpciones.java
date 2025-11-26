@@ -19,7 +19,10 @@ public class OpcionViewHolder extends RecyclerView.ViewHolder {
     public OpcionViewHolder(@NonNull View itemView) {
         super(itemView);
 
-        this.titulo = titulo;
-        this.texto = texto;
+        this.titulo = itemView.findViewById(R.id.titulo);
+        this.texto = itemView.findViewById(R.id.texto);
+        this.imagen = itemView.findViewById(R.id.imagen);
     }
+
+    
 }
