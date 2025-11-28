@@ -2,12 +2,14 @@ package com.example.ejercicio1;
 
 import android.os.Bundle;
 import android.view.View;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.graphics.Insets;
 import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -26,6 +28,7 @@ public class MainActivity extends AppCompatActivity {
         });
 
         final RecyclerView recyclerView = findViewById(R.id.recyclerview);
+        final TextView texto = findViewById(R.id.texto);
 
         recyclerView.setHasFixedSize(true);
 
@@ -52,8 +55,11 @@ public class MainActivity extends AppCompatActivity {
         adaptadorOpciones.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                finish();
+                texto.setText(datos.get(recyclerView.getChildAdapterPosition(v)).getTexto());
             }
         });
+
+        recyclerView.setAdapter(adaptadorOpciones);
+        recyclerView.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
     }
 }
