@@ -1,4 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<menu xmlns:android="http://schemas.android.com/apk/res/android">
-  
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/opc_platos" android:title="Platos">
+        <menu>
+            <item android:id="@+id/opc_primeros" android:title="Primeros"/>
+            <item android:id="@+id/opc_segundos" android:title="Segundos"/>
+        </menu>
+    </item>
+    <item android:id="@+id/opc_postres" android:title="Postres"/>
+    <item android:id="@+id/opc_dietas" android:title="Dietas">
+        <menu>
+            <item android:id="@+id/opc_keto" android:title="Ketos"/>
+        </menu>
+    </item>
+    <item android:id="@+id/opc_sugerencias" android:title="Sugerencias" android:icon="@drawable/correo" app:showAsAction="ifRoom"/>
 </menu>

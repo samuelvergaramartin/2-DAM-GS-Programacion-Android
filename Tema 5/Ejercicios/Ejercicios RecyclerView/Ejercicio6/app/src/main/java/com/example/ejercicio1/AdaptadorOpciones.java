@@ -24,5 +24,5 @@ public class OpcionViewHolder extends RecyclerView.ViewHolder {
         this.imagen = itemView.findViewById(R.id.imagen);
     }
 
-    
+
 }

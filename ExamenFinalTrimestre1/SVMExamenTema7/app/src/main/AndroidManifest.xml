@@ -12,6 +12,15 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.SVMExamenTema7">
         <activity
+            android:name=".Postres"
+            android:exported="false" />
+        <activity
+            android:name=".Segundos"
+            android:exported="false" />
+        <activity
+            android:name=".Primeros"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>

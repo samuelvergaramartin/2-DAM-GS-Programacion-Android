@@ -1,3 +1,8 @@
 <resources>
     <string name="app_name">SVMExamenTema7</string>
+    <string name="titulo_pagina_principal">RECETAS FÁCILES</string>
+    <string name="titulo_primeros">PRIMEROS</string>
+    <string name="titulo_segundos">SEGUNDOS</string>
+    <string name="titulo_postres">POSTRES</string>
+    <string name="volver">Volver</string>
 </resources>
