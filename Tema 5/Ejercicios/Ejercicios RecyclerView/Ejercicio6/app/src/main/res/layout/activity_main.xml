@@ -9,6 +9,14 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/recyclerview"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"/>
+        android:layout_height="800dp"/>
 
+    <TextView
+        android:id="@+id/texto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pulsa una opción"
+        android:textColor="@color/red"
+        android:textAlignment="center"
+        android:textSize="30sp"/>
 </LinearLayout>
